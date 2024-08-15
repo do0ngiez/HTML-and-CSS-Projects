@@ -1,0 +1,11 @@
+p {
+    color: #92FFBA;
+    background: #15572D;
+    font-size: large;
+    text-align: center;
+}
+
+h4 {
+    color: #4334e3;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
