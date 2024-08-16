@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Plantes D'Intérieur</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f1f8e9;
+        }
+        header, nav, section, footer {
+            padding: 20px;
+            margin: 20px 0;
+        }
+        nav {
+            background-color: #66bb6a; 
+            padding: 15px 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
+
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            text-align: center;
+        }
+        nav ul li {
+            display: inline;
+            margin-right: 15px;
+        }
+        nav ul li a {
+            color: #ffffff;
+            padding: 10px 15px;
+            font-weight: bold;
+            border-radius: 5px;
+
+        }
+        nav ul li a:hover {
+            background-color: #4caf50; 
+        }
+        section {
+            padding-top: 60px;
+            text-align: center; 
+        }
+        h1, h2 {
+            color: #4caf50; /
+        }
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center; 
+            gap: 10px;
+        }
+        .gallery img {
+            max-width: 100%;
+            height: auto;
+            border: 5px solid #a5d6a7; 
+            border-radius: 10px; 
+            width: 200px;
+        }
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%;
+            height: 0;
+            overflow: hidden;
+            max-width: 100%;
+            margin: 0 auto;
+        }
+
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+        footer {
+            background-color: #66bb6a; 
+            color: #ffffff; 
+            text-align: center;
+            padding: 10px 0;
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#videos">Videos</a></li>
+        </ul>
+    </nav>
+    <!-- End Navigation -->
+
+    <!-- Home -->
+    <section id="home">
+        <h1 style="font-family: 'Times New Roman', Times, serif; font-size: xx-large;">Plantes D'Intérieur</h1>
+        <p style="font-family: 'Times New Roman', Times, serif;"><i>Nature’s Charm, Chez Vous: Plantes D'Intérieur for Every Room.</i><br />
+            Scroll down to see more...
+        </p>
+    </section>
+    <!-- End Home -->
+
+    <!-- Gallery -->
+    <section id="gallery">
+        <h2>Galerie de Plantes</h2>
+        <div class="gallery">
+            <img src="./images/plant_1.png" alt="Plant 1">
+            <img src="./images/plant_2.png" alt="Plant 2">
+            <img src="./images/plant_3.png" alt="Plant 3">
+            <img src="./images/plant_4.png" alt="Plant 4">
+            <img src="./images/plant_5.png" alt="Plant 5">
+            <img src="./images/plant_6.png" alt="Plant 6">
+        </div>
+    </section>
+    <!-- End Gallery -->
+
+    <!-- Contact -->
+    <section id="contact">
+        <h2 style="text-align: left;">Wanna order? Contact us!</h2>
+        <form style="text-align: left;">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name"><br><br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email"><br><br>
+            <label for="message">Message:</label><br>
+            <textarea id="message" name="message" rows="4" cols="50"></textarea><br><br>
+            <input type="submit" value="Send">
+        </form>
+    </section>
+    <!-- End Contact -->
+
+    <!-- Video  -->
+    <section id="videos">
+        <h2 style="text-align: left;">Learn about us...</h2>
+        <div class="video-container">
+            <iframe src="https://youtu.be/1SHg2VHLL04?si=xc4uj96CUnCJB-eJ" allowfullscreen></iframe>
+        </div>
+    </section>
+    <!-- End Video -->
+
+    <!-- Footer -->
+    <footer>
+        <p>+33 1 45 67 89 01 <br>Plantes D'Intérieur, 57 Rue Cuvier, 75005 Paris, France</p>
+        <p style="font-family: 'Times New Roman', Times, serif; font-size: small;">&copy; 2024 Plantes D'Intérieur</p>
+    </footer>
+
+</body>
+</html>
