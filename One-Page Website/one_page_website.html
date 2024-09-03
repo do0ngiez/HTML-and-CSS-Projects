@@ -20,8 +20,8 @@
 
     <!-- Home -->
     <section id="home">
-        <h1 style="font-family: 'Times New Roman', Times, serif; font-size: xx-large;">Plantes D'Intérieur</h1>
-        <p style="font-family: 'Times New Roman', Times, serif;"><i>Nature’s Charm, Chez Vous: Plantes D'Intérieur for Every Room.</i><br />
+        <h1>Plantes D'Intérieur</h1>
+        <p><i>Nature’s Charm, Chez Vous: Plantes D'Intérieur for Every Room.</i><br />
             Scroll down to see more...
         </p>
     </section>
@@ -31,15 +31,63 @@
     <section id="gallery">
         <h2>Galerie de Plantes</h2>
         <div class="gallery">
-            <img src="./images/plant_1.png" alt="Plant 1">
-            <img src="./images/plant_2.png" alt="Plant 2">
-            <img src="./images/plant_3.png" alt="Plant 3">
-            <img src="./images/plant_4.png" alt="Plant 4">
-            <img src="./images/plant_5.png" alt="Plant 5">
-            <img src="./images/plant_6.png" alt="Plant 6">
+            <img src="./images/plant_1.png" alt="Plant 1" onclick="openModal();currentSlide(1)">
+            <img src="./images/plant_2.png" alt="Plant 2" onclick="openModal();currentSlide(2)">
+            <img src="./images/plant_3.png" alt="Plant 3" onclick="openModal();currentSlide(3)">
+            <img src="./images/plant_4.png" alt="Plant 4" onclick="openModal();currentSlide(4)">
+            <img src="./images/plant_5.png" alt="Plant 5" onclick="openModal();currentSlide(5)">
+            <img src="./images/plant_6.png" alt="Plant 6" onclick="openModal();currentSlide(6)">
         </div>
     </section>
     <!-- End Gallery -->
+
+    <!-- Lightbox Modal -->
+    <div id="lightboxModal" class="modal">
+        <span class="close cursor" onclick="closeModal()">&times;</span>
+        <div class="modal-content">
+
+            <div class="mySlides">
+                <div class="numbertext">1 / 6</div>
+                <img src="./images/plant_1.png" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">2 / 6</div>
+                <img src="./images/plant_2.png" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">3 / 6</div>
+                <img src="./images/plant_3.png" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">4 / 6</div>
+                <img src="./images/plant_4.png" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">5 / 6</div>
+                <img src="./images/plant_5.png" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">6 / 6</div>
+                <img src="./images/plant_6.png" style="width:100%">
+            </div>
+
+            <!-- Next/previous controls -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+            <!-- Caption text -->
+            <div class="caption-container">
+                <p id="caption"></p>
+            </div>
+
+        </div>
+    </div>
+    <!-- End Lightbox Modal -->
 
     <!-- Contact -->
     <section id="contact">
@@ -68,8 +116,9 @@
     <!-- Footer -->
     <footer>
         <p>+33 1 45 67 89 01 <br>Plantes D'Intérieur, 57 Rue Cuvier, 75005 Paris, France</p>
-        <p style="font-family: 'Times New Roman', Times, serif; font-size: small;">&copy; 2024 Plantes D'Intérieur</p>
+        <p>&copy; 2024 Plantes D'Intérieur</p>
     </footer>
 
+    <script src="./js/lightbox.js"></script>
 </body>
 </html>
